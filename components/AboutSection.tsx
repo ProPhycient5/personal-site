@@ -67,16 +67,19 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I believe that you should{" "}
+              I believe in the{" "}
               <span className="font-bold text-amber-500">
-                never stop failing
+                persistent pursuit of your true passions
               </span>{" "}
-              and <span className="font-bold text-amber-500">growing </span>
-              which I strive to do. Outside of work, I explore new places,
+              as it fosters{" "}
+              <span className="font-bold text-amber-500">personal growth </span>
+              regardless of the outcomes. Outside of work, I explore new places,
               indulge in cooking traditional{" "}
               <span className="text-amber-500 font-extrabold">ଓଡ଼ିଆ </span>
               (Odia) cuisine, and engage in dynamic training activities. Join me
-              on this adventure! 😎
+              on this adventure! 😎 I believe in the persistent pursuit of your
+              true passions, as it fosters personal growth regardless of the
+              outcomes.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
