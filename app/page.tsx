@@ -1,7 +1,8 @@
 import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection.jsx";
+// import AboutSection from "@/components/AboutSection.jsx";
 import PortfolioSection from "@/components/PortfolioSection";
+import AboutSection from "@/components/AboutSection";
 
 export default function Home() {
   return (
