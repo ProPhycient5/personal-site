@@ -3,8 +3,8 @@ import {
   AiOutlineGithub,
   AiOutlineTwitter,
   AiOutlineLinkedin,
-  AiOutlineYoutube,
 } from "react-icons/ai";
+import { PiMediumLogoFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -15,7 +15,11 @@ const Footer = () => {
           © 2023 Sawan Kumar Das<a href="/" className="hover:underline"></a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 my-1">
-          <a href="https://github.com/ProPhycient5" rel="noreferrer" target="_blank">
+          <a
+            href="https://github.com/ProPhycient5"
+            rel="noreferrer"
+            target="_blank"
+          >
             <AiOutlineGithub
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
@@ -43,10 +47,15 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
+            href="https://medium.com/@ProPhycientSawan"
             rel="noreferrer"
             target="_blank"
-          ></a>
+          >
+            <PiMediumLogoFill
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              size={30}
+            />
+          </a>
         </div>
       </div>
     </footer>
