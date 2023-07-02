@@ -73,8 +73,8 @@ const AboutSection = () => {
               </span>{" "}
               as it fosters{" "}
               <span className="font-bold text-amber-500">personal growth </span>
-              regardless of the outcomes. Outside of work, I explore new places,
-              indulge in cooking traditional{" "}
+              regardless of the outcomes. Outside of work, I blog tech stuff,
+              explore new places, indulge in cooking traditional{" "}
               <span className="text-amber-500 font-extrabold">ଓଡ଼ିଆ </span>
               (Odia) cuisine, and engage in dynamic training activities. Join me
               on this adventure! 😎 I believe in the persistent pursuit of your
@@ -118,7 +118,6 @@ const AboutSection = () => {
           </Linki>
         </div>
       </div>
-      {/* <div className="flex flex-row items-center text-center justify-center "></div> */}
     </section>
   );
 };
