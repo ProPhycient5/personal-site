@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiArrowDown } from "react-icons/hi";
 import { Link as Linki } from "react-scroll/modules";
+import { BiDownload } from "react-icons/bi";
 
 const skills = [
   "HTML",
@@ -21,6 +22,14 @@ const skills = [
 ];
 
 const AboutSection = () => {
+  const handleDownload = () => {
+    const resumeFileName = "resume.pdf";
+    const resumeFilePath = `/${resumeFileName}`;
+    const downloadLink = document.createElement("a");
+    downloadLink.href = resumeFilePath;
+    downloadLink.download = resumeFileName;
+    downloadLink.click();
+  };
   return (
     <section id="about">
       <div className="my-12 pb-12 md:py-16">
@@ -84,6 +93,7 @@ const AboutSection = () => {
           </div>
           <div className="text-center md:w-1/2 md:text-left">
             <h1 className="text-2xl font-bold mb-6">My Skills</h1>
+
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
@@ -103,6 +113,14 @@ const AboutSection = () => {
               height={500}
               className="hidden md:block md:relative md:bottom-4 md:z-0 md:mt-8"
             />
+            <div className="flex justify-center md:justify-start items-center w-full mt-4">
+              <button
+                onClick={handleDownload}
+                className="text-neutral-100 cursor-pointer shadow-2xl font-semibold flex justify-center items-center h-12 rounded-lg fancy-button"
+              >
+                Resume <BiDownload className="h-6 w-8"/>
+              </button>
+            </div>
           </div>
         </div>
         <div className="w-full flex justify-center pt-16">

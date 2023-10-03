@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
+import { BiDownload } from "react-icons/bi";
 
 const HeroSection = () => {
   return (
@@ -29,9 +30,10 @@ const HeroSection = () => {
             from Bengaluru, India. Working towards creating meaningful software
             that aims to enhance the well-being of humanity.
           </p>
+
           <Link
             to="portfolio"
-            className="text-neutral-100 shadow-2xl font-semibold flex justify-center items-center w-28 h-12 rounded-lg fancy-button"
+            className="text-neutral-100 cursor-pointer shadow-2xl font-semibold flex justify-center items-center w-28 h-12 rounded-lg fancy-button"
             activeClass="active"
             spy={true}
             smooth={true}
