@@ -23,7 +23,7 @@ const skills = [
 
 const AboutSection = () => {
   const handleDownload = () => {
-    const resumeFileName = "resume.pdf";
+    const resumeFileName = "sawan_resume.pdf";
     const resumeFilePath = `/${resumeFileName}`;
     const downloadLink = document.createElement("a");
     downloadLink.href = resumeFilePath;
