@@ -28,9 +28,3 @@ export default function RootLayout({
   );
 }
 
-//Need to install various npm packages, not shown in video
-//need to include @useClient
-//please shoot the video by increasing the font-size, it' hard to follow your tuitorial.
-//please explain little about the used npm packages like next-theme
-//video quality is not good.
-//u missed to tell about dark mode of tailwind.

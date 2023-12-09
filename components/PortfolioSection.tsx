@@ -5,6 +5,14 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const portfolios = [
   {
+    name: "Mini-page-builder",
+    description:
+      "It is a mini page builder with few draggable components without using any drag-n-drop external library. Moreover, you export the page configuration",
+    image: "/mini_builder.gif",
+    github: "https://github.com/ProPhycient5/my_page_builder",
+    link: "https://my-page-builder.vercel.app/",
+  },
+  {
     name: "Hacker-News-Clone",
     description:
       "It is a clone of hacker news website integrated with open API.",
@@ -14,21 +22,14 @@ const portfolios = [
   },
   {
     name: "Post it",
-    description: "It is a small social media app where you can post and react 😀",
+    description:
+      "It is a small social media app where you can post and react 😀",
     image: "/small_social_media.JPG",
     github: "https://github.com/ProPhycient5/redux_essential_official",
     link: "https://redux-essential-official-sawan.vercel.app/",
   },
-
-  {
-    name: "Enhanced photocatalytic properties of a chemically modified blue phosphorene",
-    description:
-      "This research explores sulphur-doped blue-phosphorene sheets for efficient water splitting, revealing promising catalysts with superior hydrogen evolution potential.",
-    github: "",
-    image: "/phosphorene.JPG",
-    link: "https://pubs.rsc.org/en/content/articlehtml/2021/ra/d0ra10829d",
-  },
 ];
+const gifImages = ["Mini-page-builder", "Hacker-News-Clone"];
 
 const PortfolioSection = () => {
   return (
@@ -46,7 +47,7 @@ const PortfolioSection = () => {
                 <div className="flex flex-col md:flex-row md:space-x-12">
                   <div className="md:w-1/2 mb-5 md:mb-0">
                     <Link href={portfolio.link}>
-                      {portfolio?.image === "Hacker-News-Clone" ? (
+                      {gifImages.includes(portfolio?.image) ? (
                         <img
                           src={portfolio?.image}
                           alt={portfolio?.name}
