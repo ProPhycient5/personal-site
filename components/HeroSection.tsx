@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
-import { BiDownload } from "react-icons/bi";
 
 const HeroSection = () => {
   return (
