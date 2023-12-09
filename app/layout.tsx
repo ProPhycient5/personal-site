@@ -3,6 +3,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "next-themes";
 import Footer from "@/components/Footer";
 // import Footer from "@/components/Footer.tsx";
 
@@ -16,10 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
  
-      <body className="bg-binary-blue text-gray-200 font-sans">
+      <body className="dark:bg-stone-900 font-serif">
+        <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}
           <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
