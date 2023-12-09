@@ -64,7 +64,7 @@ const AboutSection = () => {
               PhD in France were derailed due to the global pandemic. It was
               during this time that I discovered my hidden passion for
               programming and decided to embrace it fully by transitioning into
-              the field of software engineering.
+              software engineering.
             </p>
             <br />
             <p>
