@@ -1,10 +1,10 @@
 "use client"; // this is a client component
 import React, { useState } from "react";
 import { Link } from "react-scroll/modules";
-import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import cx from "classnames";
+import Image from "next/image";
 
 interface NavItem {
   label: string;
@@ -13,33 +13,40 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Home",
-    page: "home",
+    label: "Why Marvel",
+    page: "/",
   },
   {
-    label: "About",
-    page: "about",
+    label: "Enterprise",
+    page: "/",
   },
   {
-    label: "Portfolio",
-    page: "portfolio",
+    label: "Pricing",
+    page: "/",
+  },
+  {
+    label: "Sign in",
+    page: "/",
   },
 ];
 
 const Navbar = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
+    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-binary-blue border-b border-stone-600">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 sm:py-4 md:py-1">
             <div className="md:py-5 md:block">
-              <h2 className="font-bold text-5xl text-transparent w-max bg-[conic-gradient(from_var(--angle)_at_50%_100%,hsl(47deg_89%_72%),hsl(38deg_92%_50%),hsl(14deg_100%_40%),hsl(38deg_92%_50%),hsl(47deg_89%_72%))] animate-fancy bg-clip-text">
-                SKD
-              </h2>
+              <Image
+                src="/asset/logo-white.svg"
+                alt="logo"
+                width={100}
+                height={100}
+                style={{ width: "100%", height: "auto" }}
+                // className="rounded-full shadow-2xl"
+              />
             </div>
             <div className="md:hidden">
               <button onClick={() => setNavbar(!navbar)}>
@@ -77,21 +84,6 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              {currentTheme === "dark" ? (
-                <button
-                  className="bg-amber-500 p-2 rounded-xl"
-                  onClick={() => setTheme("light")}
-                >
-                  <RiSunLine size={25} color="black" />
-                </button>
-              ) : (
-                <button
-                  className="bg-slate-200 p-2 rounded-xl"
-                  onClick={() => setTheme("dark")}
-                >
-                  <RiMoonFill size={25} />
-                </button>
-              )}
             </div>
           </div>
         </div>

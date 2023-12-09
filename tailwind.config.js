@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'binary-blue': '#0e0e16',
+      },
       screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
       animation: {
         fadeIn: "fadeIn 1.5s",
@@ -53,3 +56,4 @@ module.exports = {
   },
   plugins: [],
 };
+//#0b0b10
