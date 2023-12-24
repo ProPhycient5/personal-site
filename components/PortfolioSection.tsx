@@ -5,6 +5,14 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const portfolios = [
   {
+    name: "MovieFlix",
+    description:
+      "It is a compilation of all movies with search and genre filter features",
+    image: "/movieFlix.gif",
+    github: "https://github.com/ProPhycient5/film-database",
+    link: "https://film-database-bay.vercel.app/",
+  },
+  {
     name: "Mini-page-builder",
     description:
       "It is a mini page builder with few draggable components without using any drag-n-drop external library. Moreover, you export the page configuration",

@@ -85,10 +85,7 @@ const AboutSection = () => {
               regardless of the outcomes. Outside of work, I blog tech stuff,
               explore new places, indulge in cooking traditional{" "}
               <span className="text-amber-500 font-extrabold">ଓଡ଼ିଆ </span>
-              (Odia) cuisine, and engage in dynamic training activities. Join me
-              on this adventure! 😎 I believe in the persistent pursuit of your
-              true passions, as it fosters personal growth regardless of the
-              outcomes.
+              (Odia) cuisine, and engage in dynamic training activities.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
