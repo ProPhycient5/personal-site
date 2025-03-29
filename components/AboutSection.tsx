@@ -12,10 +12,11 @@ const skills = [
   "CSS",
   "JavaScript",
   "TypeScript",
-  "Python",
   "React",
   "Redux",
   "Next.js",
+  "Jenkin",
+  "Jira",
   "Tailwind CSS",
   "Git",
   "GitHub",
@@ -23,7 +24,7 @@ const skills = [
 
 const AboutSection = () => {
   const handleDownload = () => {
-    const resumeFileName = "sawan_resume.pdf";
+    const resumeFileName = "SawanResume2025.pdf";
     const resumeFilePath = `/${resumeFileName}`;
     const downloadLink = document.createElement("a");
     downloadLink.href = resumeFilePath;
@@ -54,9 +55,9 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              After completing my master&apos;s degree in Computational Physics
-              from the Central University of Punjab, Bathinda, I delved into
-              research on low-dimensional materials at CSIR-NCL, resulting in my
+              After earning my master&apos;s in Computational Physics from
+              Central University of Punjab, I researched low-dimensional
+              materials at CSIR-NCL, publishing my{" "}
               <Link
                 className="underline hover:text-amber-500 cursor-pointer"
                 href="https://pubs.rsc.org/en/content/articlehtml/2021/ra/d0ra10829d"
@@ -64,15 +65,9 @@ const AboutSection = () => {
               >
                 &nbsp;first published paper
               </Link>
-              .
-            </p>
-            <br />
-            <p>
-              However, life took an unexpected turn when my plans to pursue a
-              PhD in France were derailed due to the global pandemic. It was
-              during this time that I discovered my hidden passion for
-              programming and decided to embrace it fully by transitioning into
-              software engineering.
+              . The pandemic disrupted my PhD plans in France, leading me to
+              discover and fully embrace my passion for programming,
+              transitioning into software engineering.
             </p>
             <br />
             <p>
@@ -82,10 +77,7 @@ const AboutSection = () => {
               </span>{" "}
               as it fosters{" "}
               <span className="font-bold text-amber-500">personal growth </span>
-              regardless of the outcomes. Outside of work, I blog tech stuff,
-              explore new places, indulge in cooking traditional{" "}
-              <span className="text-amber-500 font-extrabold">ଓଡ଼ିଆ </span>
-              (Odia) cuisine, and engage in dynamic training activities.
+              regardless of the outcomes.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
@@ -115,7 +107,7 @@ const AboutSection = () => {
                 onClick={handleDownload}
                 className="text-neutral-100 cursor-pointer shadow-2xl font-semibold flex justify-center items-center h-12 rounded-lg fancy-button"
               >
-                Resume <BiDownload className="h-6 w-8"/>
+                Resume <BiDownload className="h-6 w-8" />
               </button>
             </div>
           </div>
