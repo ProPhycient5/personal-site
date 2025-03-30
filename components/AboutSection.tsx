@@ -97,14 +97,7 @@ const AboutSection = () => {
                 );
               })}
             </div>
-            <Image
-              src="/frontend_guy.png"
-              alt="cartoon_vector"
-              width={400}
-              height={500}
-              className="hidden md:block md:relative md:bottom-4 md:z-0 md:mt-8"
-            />
-            <div className="flex justify-center items-center w-full mt-4">
+            <div className="flex justify-center items-center w-full mt-20">
               <button
                 onClick={handleDownload}
                 className="text-neutral-100 cursor-pointer shadow-2xl font-semibold flex justify-center items-center h-12 rounded-lg fancy-button"
