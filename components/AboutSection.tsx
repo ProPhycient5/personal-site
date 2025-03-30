@@ -20,6 +20,8 @@ const skills = [
   "Tailwind CSS",
   "Git",
   "GitHub",
+  "Unit Testing by RTL",
+  "JEST",
 ];
 
 const AboutSection = () => {
